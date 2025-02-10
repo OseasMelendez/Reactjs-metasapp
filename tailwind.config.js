@@ -7,12 +7,11 @@ export default {
     ],
     theme: {
       extend: {
-        height:{
-            sm:'8px',
-            md:'16px',
-            lg:'24px',
-            xl:'48px',
-        },
+        "sm-custom": "8px",
+        "md-custom": "16px",
+        "lg-custom": "24px",
+        "xl-custom": "48px",
+        "principal": "505px",
       },
     },
     plugins: [],
