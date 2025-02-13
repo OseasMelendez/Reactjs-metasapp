@@ -4,5 +4,5 @@
 }
 
 .texto{
-    @apply ml-2 text-sm font-semibold text-gray-900;
+    @apply ml-2 text-left font-semibold text-gray-900;
 }
