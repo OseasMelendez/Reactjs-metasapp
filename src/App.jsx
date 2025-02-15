@@ -6,6 +6,8 @@ import Encabezamiento from './componentes/compartidos/Encabezamiento.jsx'
 import Pie from './componentes/compartidos/Pie.jsx'
 import Principal from './componentes/compartidos/Principal.jsx'
 import Meta from './componentes/lista/Metas.jsx'
+import Lista from './componentes/lista/lista.jsx'
+
 
 function App() {
   
@@ -13,7 +15,7 @@ function App() {
     <div className='App'>
     <Encabezamiento></Encabezamiento>
     <Principal>
-      <Meta></Meta>
+      <Lista></Lista>
     </Principal>
     <Pie></Pie>
     </div>

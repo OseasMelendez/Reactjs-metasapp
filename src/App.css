@@ -5,3 +5,43 @@
   text-align: center;
 }
 
+.tarjeta{
+  @apply  bg-[#fff] rounded-[15px] shadow-[8px_8px_16px_rgba(196,196,196,0.5),-8px_-8px_16px_rgba(255,255,255,0.8)] m-4
+}
+
+/* From Uiverse.io by xueyuantan */ 
+.boton {
+  width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5,
+              -6px -6px 12px #ffffff;
+ }
+ 
+.boton::before {
+  content: '';
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #248de4 0%, #b8e5e4 100%);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+.boton:hover::before {
+  width: 9em;
+ }
+
+.boton--aqua{
+  @apply mr-4
+}

@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+.meta{
+@apply flex p-2 justify-between;
+}
+
+.icono{
+  @apply w-10 h-10 rounded-full
+  bg-[#f7f2f2]  shadow-[inset_5px_5px_5px_rgba(196,196,196,0.6),inset_-5px_-5px_5px_rgba(255,255,255,0.3)] 
+   flex items-center justify-center;
+}
+
+.barra1{
+    @apply  h-2 w-60
+    bg-[#d7d5f5] border border-[rgba(255,255,255,0.333)] 
+    rounded-[40px] 
+    shadow-[-4px_-2px_16px_0px_#ffffff,4px_2px_16px_0px_rgba(95,157,231,0.48)];
+}
+
+.barra2{
+    @apply h-2  rounded-[40px] bg-gradient-to-l from-green-400 to-blue-600;
+}
