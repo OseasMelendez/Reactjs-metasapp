@@ -23,8 +23,12 @@
   box-shadow: 6px 6px 12px #c5c5c5,
               -6px -6px 12px #ffffff;
  }
- 
-.boton::before {
+
+ .boton--aqua{
+  @apply mr-4
+}
+
+.boton--aqua::before {
   content: '';
   width: 0;
   height: 3em;
@@ -38,10 +42,73 @@
   z-index: -1;
  }
  
-.boton:hover::before {
+.boton--aqua:hover::before {
   width: 9em;
  }
 
-.boton--aqua{
-  @apply mr-4
+.boton--green{
+  @apply bg-blue-300 text-white  ml-2;
+}
+
+.boton--green::before {
+  content: '';
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #5110e9 0%, #bfb8e5 100%);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+
+ .boton--green:hover::before {
+  width: 9em;
+ }
+
+ .boton--red{
+  @apply bg-red-300 text-white mr-2;
+}
+
+.boton--red::before {
+  content: '';
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #f70404 0%, #e5c0b8 100%);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+
+ .boton--red:hover::before {
+  width: 9em;
+ }
+
+.label{
+  @apply block uppercase text-xs font-bold mb-6 text-left;
+}
+
+/* From Uiverse.io by Praashoo7 */ 
+.input {
+  @apply w-full;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #f4efef;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+}
+
+.input:focus {
+  background-color: white;
+  transform: scale(1.00);
+  box-shadow: 13px 13px 100px #969696,
+             -13px -13px 100px #ffffff;
 }
